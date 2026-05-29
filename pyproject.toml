@@ -1,4 +1,4 @@
-﻿[build-system]
+[build-system]
 requires = ["setuptools>=61"]
 build-backend = "setuptools.build_meta"
 
@@ -36,3 +36,7 @@ web = [
 
 [project.scripts]
 ssq-model = "ssq_model.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["ssq_model*"]
+exclude = ["数据*", "outputs*", "tests*", "docs*", "scripts*"]

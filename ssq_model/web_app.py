@@ -1,11 +1,11 @@
-﻿from __future__ import annotations
+from __future__ import annotations
 
 from pathlib import Path
 
-from .data import DEFAULT_DATA_PATH, load_draws
-from .features import feature_table
-from .web.actions import create_web_report, generate_candidate_rows, pymc_summary_rows
-from .web.charts import (
+from ssq_model.data import DEFAULT_DATA_PATH, load_draws
+from ssq_model.features import feature_table
+from ssq_model.web.actions import create_web_report, generate_candidate_rows, pymc_summary_rows
+from ssq_model.web.charts import (
     build_frequency_chart_spec,
     blue_frequency,
     red_frequency,
@@ -13,7 +13,7 @@ from .web.charts import (
     span_distribution,
     to_plotly_bar,
 )
-from .web.state import ACADEMIC_NOTICE, build_dashboard_summary, data_quality_rows
+from ssq_model.web.state import ACADEMIC_NOTICE, build_dashboard_summary, data_quality_rows
 
 
 def _render_chart(st, spec) -> None:
