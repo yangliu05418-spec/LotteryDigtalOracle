@@ -1,0 +1,22 @@
+﻿name: ssq-model-macos-arm64
+channels:
+  - conda-forge
+dependencies:
+  - python=3.11
+  - pip
+  - numpy
+  - pandas
+  - scipy
+  - matplotlib
+  - seaborn
+  - scikit-learn
+  - statsmodels
+  - pymc
+  - arviz
+  - jax
+  - numpyro
+  - blackjax
+  - streamlit
+  - plotly
+  - pip:
+      - -e .

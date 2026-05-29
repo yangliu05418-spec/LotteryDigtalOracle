@@ -1,0 +1,8 @@
+﻿# 基础研究依赖（当前 v1 代码保持标准库可运行；安装这些包可用于后续图表、ML 与更严格检验）
+pandas
+numpy
+scipy
+matplotlib
+seaborn
+scikit-learn
+statsmodels

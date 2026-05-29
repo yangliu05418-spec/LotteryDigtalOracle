@@ -1,0 +1,38 @@
+﻿[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ssq-model"
+version = "0.1.0"
+description = "CPU-first 双色球概率建模研究工具包"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = []
+
+[project.optional-dependencies]
+analysis = ["pandas", "numpy", "scipy", "matplotlib", "seaborn", "scikit-learn", "statsmodels"]
+macos-arm64 = [
+  "pandas",
+  "numpy",
+  "scipy",
+  "matplotlib",
+  "seaborn",
+  "scikit-learn",
+  "statsmodels",
+  "pymc",
+  "arviz",
+  "jax",
+  "numpyro",
+  "blackjax",
+  "streamlit",
+  "plotly",
+]
+bayesian-extra = ["pymc", "arviz", "jax", "numpyro", "blackjax"]
+web = [
+  "streamlit",
+  "plotly",
+]
+
+[project.scripts]
+ssq-model = "ssq_model.cli:main"
